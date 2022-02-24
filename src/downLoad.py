@@ -11,17 +11,17 @@ from tqdm import tqdm
 def wikipedia_scrape(topic, links_count=10, verbose=True):
     """Download Pages related to given topic from Wikipedia.
 
-        Parameters:
-            topic(string): Topic Name to search for.
-            links_count(int): Number of links to download.
-            verbose(boolean): Display Progress bar while downloading.
+    Parameters:
+        topic(string): Topic Name to search for.
+        links_count(int): Number of links to download.
+        verbose(boolean): Display Progress bar while downloading.
 
-        Returns:
-            pandas dataframe with columns
-                topic: topic,
-                content: Page Content,
-                url: Source URL/Link,
-                categories: As categories by wikipedia
+    Returns:
+        pandas dataframe with columns
+            topic: topic,
+            content: Page Content,
+            url: Source URL/Link,
+            categories: As categories by wikipedia
     """
     wiki_api = wikipediaapi.Wikipedia(
         language="en", extract_format=wikipediaapi.ExtractFormat.WIKI
