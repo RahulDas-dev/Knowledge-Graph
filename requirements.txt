@@ -1,3 +1,4 @@
+spacy
 wikipedia-api
 pandas
 tqdm
